@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "yarn test",
+    "test": "ava koans.js",
+    "reset": "curl 'https://raw.githubusercontent.com/tiy-tpa-fee/koans/master/koans.original.js' -o koans.js && git add koans.js && git commit -m 'Reset koans.js'"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "eslint": "^3.10.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.2",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "ava": {
+    "failFast": true,
+    "serial": true,
+    "watch": true,
+    "verbose": true
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "rules": {
+      "prefer-const": "warn"
+    }
+  }
+}
