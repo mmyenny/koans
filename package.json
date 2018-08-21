@@ -3,7 +3,7 @@
   "scripts": {
     "start": "yarn test",
     "test": "ava koans.js",
-    "reset": "curl 'https://raw.githubusercontent.com/tiy-tpa-fee/koans/master/koans.original.js' -o koans.js && git add koans.js && git commit -m 'Reset koans.js'"
+    "reset": "curl 'https://raw.githubusercontent.com/suncoast-devs/koans/master/src/koans.original.js' -o koans.js && git add koans.js && git commit -m 'Reset koans.js'"
   },
   "devDependencies": {
     "ava": "^0.16.0",
