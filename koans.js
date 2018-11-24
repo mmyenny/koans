@@ -408,3 +408,4 @@ test('Use some and every to determine if a function applied to any or all items 
   t.is(__, onlyEven.every(isEven))
   t.is(__, mixedBag.some(isEven))
 })
+
