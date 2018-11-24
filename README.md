@@ -19,8 +19,6 @@ yarn test
 
 Start editing `koans.js`. You only need replace instances of `__` in each test case to make it pass. You shouldn't need to edit any other code.
 
-Don't edit `koans.original.js`. I will also be improving and extending the set of koans over time, so you'll be able to pull upstream changes to this file (using `yarn reset`).
-
 ## Explorer & Adventure Mode
 
 - Complete all of the available koans.
