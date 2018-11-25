@@ -3,8 +3,8 @@
   "scripts": {
     "start": "yarn test",
     "test": "ava koans.js",
-    "reset": "node -e 'console.log(Buffer.from(fs.readFileSync(`.koans.uue`).toString(), `base64`).toString(`binary`))' > koans.js && git add koans.js && git commit --allow-empty -m 'Reset koans.js'",
-    "encode": "node -e 'console.log(Buffer.from(fs.readFileSync(`koans.js`)).toString(`base64`))' > .koans.uue && git add .koans.uue && git commit -m 'Re-encode koans'"
+    "reset": "node reset.js > koans.js && git add koans.js && git commit --allow-empty -m 'Reset koans.js'",
+    "encode": "node encode.js > .koans.uue && git add .koans.uue && git commit -m 'Re-encode koans'"
   },
   "devDependencies": {
     "ava": "^0.16.0",
